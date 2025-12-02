@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
     margin-top: 70px;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('../images/restaurant look.jpeg');
+        url('restaurant look.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -947,3 +947,4 @@ h1, h2, h3, h4, h5, h6 {
         height: 210px;
     }
 }
+

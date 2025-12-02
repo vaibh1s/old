@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Menu - The Olde Dutch Restaurant</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <!-- ===== Navigation ===== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">🏛️ Olde Dutch</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== Menu Header ===== -->
+    <main class="menu-page">
+        <header class="menu-header">
+            <h1>Our Menu</h1>
+            <p>Explore our delicious offerings.</p>
+        </header>
+
+        <!-- ===== Menu Layout (Sidebar + Sections) ===== -->
+        <section class="menu-container">
+            <!-- Sidebar navigation -->
+            <aside class="menu-sidebar">
+                <h3>Menu Sections</h3>
+                <a href="#buffet" class="menu-item active">Buffet</a>
+                <a href="#dinners" class="menu-item">Homestyle Dinners</a>
+                <a href="#sandwiches" class="menu-item">Sandwiches</a>
+                <a href="#senior" class="menu-item">Senior Menu</a>
+                <a href="#soups" class="menu-item">Soups &amp; Salads</a>
+                <a href="#kids" class="menu-item">Kids</a>
+                <a href="#desserts" class="menu-item">Desserts</a>
+                <a href="#beverages" class="menu-item">Beverages</a>
+            </aside>
+
+            <!-- Menu sections -->
+            <div class="menu-content">
+                <!-- Buffet -->
+                <section class="menu-section" id="buffet">
+                    <h2>Buffet</h2>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Marinated Broasted Chicken</h3>
+                        <div class="menu-item-price">
+                            Mon–Fri Lunch (11am–3pm): $15.49 |
+                            Mon–Fri Dinner (3pm–Close): $17.49 |
+                            Sat–Sun All Day: $17.49
+                        </div>
+                        <p>
+                            All-you-care-to-eat buffet with at least six meats, super salad bar,
+                            soup station, and dessert (slice of pie or scoop of hand-dipped ice cream).
+                        </p>
+                    </div>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Carryout Buffet</h3>
+                        <div class="menu-item-price">$9.99 per pound</div>
+                    </div>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Kids Pricing</h3>
+                        <div class="menu-item-price">
+                            Under 3: Free &nbsp;|&nbsp; Ages 3–10: $7.99 (includes drink)
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Homestyle Dinners -->
+                <section class="menu-section" id="dinners">
+                    <h2>Homestyle Dinners</h2>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Marinated Broasted Chicken</h3>
+                        <div class="menu-item-price">
+                            3pc White: $14.49 &nbsp;|&nbsp; 2pc White: $12.49 &nbsp;|&nbsp;
+                            3pc Dark: $13.49 &nbsp;|&nbsp; 2pc Dark: $11.49
+                        </div>
+                    </div>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Chopped Steak</h3>
+                        <div class="menu-item-price">$14.99</div>
+                    </div>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Marinated Grilled Chicken</h3>
+                        <div class="menu-item-price">$14.99</div>
+                    </div>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Battered Fish &amp; Popcorn Shrimp</h3>
+                        <div class="menu-item-price">$14.99</div>
+                    </div>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Liver &amp; Onions</h3>
+                        <div class="menu-item-price">$12.99</div>
+                    </div>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Chicken &amp; Noodles</h3>
+                        <div class="menu-item-price">$12.49</div>
+                    </div>
+                </section>
+
+                <!-- Sandwiches -->
+                <section class="menu-section" id="sandwiches">
+                    <h2>Sandwiches</h2>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Open-Faced Sandwich</h3>
+                        <div class="menu-item-price">$13.49</div>
+                    </div>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Grilled Chicken</h3>
+                        <div class="menu-item-price">$11.99</div>
+                    </div>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Bacon Cheeseburger</h3>
+                        <div class="menu-item-price">$11.99</div>
+                    </div>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Fish Sandwich</h3>
+                        <div class="menu-item-price">$13.49</div>
+                    </div>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Bacon, Lettuce &amp; Tomato</h3>
+                        <div class="menu-item-price">$12.49</div>
+                        <p>Add super salad bar: $3.99</p>
+                    </div>
+                </section>
+
+                <!-- Senior Menu -->
+                <section class="menu-section" id="senior">
+                    <h2>Senior Menu</h2>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Chicken &amp; Noodles</h3>
+                        <div class="menu-item-price">$9.99</div>
+                    </div>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Ham Loaf</h3>
+                        <div class="menu-item-price">$10.99</div>
+                    </div>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Meatloaf</h3>
+                        <div class="menu-item-price">$10.99</div>
+                    </div>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Broasted Chicken (2pc White)</h3>
+                        <div class="menu-item-price">$10.99</div>
+                        <p>
+                            Includes choice of sides such as sweet corn, green beans,
+                            stewed tomatoes, Brussels sprouts, applesauce, fries, mashed
+                            potatoes, stuffing, cole slaw, cottage cheese, or French fries.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Soups & Salads -->
+                <section class="menu-section" id="soups">
+                    <h2>Soups &amp; Salads</h2>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Homemade Soup</h3>
+                        <div class="menu-item-price">Bowl $4.49 &nbsp;|&nbsp; Cup $3.49</div>
+                    </div>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Super Salad Bar</h3>
+                        <div class="menu-item-price">$9.99</div>
+                    </div>
+                </section>
+
+                <!-- Kids Menu -->
+                <section class="menu-section" id="kids">
+                    <h2>Kid's Menu</h2>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Kids Buffet</h3>
+                        <div class="menu-item-price">
+                            Under 3 Free &nbsp;|&nbsp;
+                            Ages 3–10 $7.99 (includes drink)
+                        </div>
+                    </div>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>
+                            Kids Cheeseburger, Mini Corn Dogs,
+                            Grilled Cheese, Chicken Strips
+                        </h3>
+                        <div class="menu-item-price">$6.99 each (includes one side)</div>
+                    </div>
+                </section>
+
+                <!-- Desserts -->
+                <section class="menu-section" id="desserts">
+                    <h2>Desserts</h2>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Slice of Pie</h3>
+                        <div class="menu-item-price">
+                            Cream Pie $3.99 &nbsp;|&nbsp; Fruit Pie $3.49
+                        </div>
+                    </div>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>A’La Mode</h3>
+                        <div class="menu-item-price">$1.99</div>
+                    </div>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Hand-Dipped Ice Cream</h3>
+                        <div class="menu-item-price">$2.49</div>
+                        <p>Whole pies available to go.</p>
+                    </div>
+                </section>
+
+                <!-- Beverages -->
+                <section class="menu-section" id="beverages">
+                    <h2>Beverages</h2>
+                    <div class="menu-item-box card-hover reveal">
+                        <h3>Drink Selection</h3>
+                        <p>
+                            Pepsi products, fresh brewed iced tea (sweet &amp; unsweetened),
+                            coffee, hot tea, and milk.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>The Olde Dutch Restaurant</h3>
+                <p>Authentic comfort food since 1985.</p>
+                <p>12791 State Route 664 S<br />Logan, OH 43138</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Mon–Sat: 11 AM – 8 PM</p>
+                <p>Sun: 11 AM – 7 PM</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 The Olde Dutch Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="tel:+17403851000" class="sticky-btn">📞 Book a Table</a>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

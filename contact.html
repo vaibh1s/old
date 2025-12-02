@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - The Olde Dutch Restaurant</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">🏛️ Olde Dutch</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact content -->
+    <main>
+        <section class="contact-container">
+            <!-- Map -->
+            <div class="contact-map card-hover reveal">
+    <iframe
+        src="https://www.google.com/maps?q=12791%20State%20Route%20664%20S%2C%20Logan%2C%20OH%2043138&hl=en&z=15&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+    ></iframe>
+</div>
+
+
+            <!-- Contact info -->
+            <div class="contact-info reveal">
+                <h2>Get in Touch</h2>
+
+                <div class="info-block">
+                    <h3>Address</h3>
+                    <p>12791 State Route 664 S<br />Logan, OH 43138</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+17403851000">+1 (740) 385-1000</a></p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Email</h3>
+                    <p>
+                        <a href="mailto:info@theoldedutchrestaurant.com">
+                            info@theoldedutchrestaurant.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="info-block">
+                    <h3>Opening Hours</h3>
+                    <p>
+                        Mon–Sat: 11:00 AM – 8:00 PM<br />
+                        Sun: 11:00 AM – 7:00 PM
+                    </p>
+                </div>
+            </div>
+
+            <!-- Contact form -->
+            <div class="contact-form reveal">
+                <h2>Send Us a Message</h2>
+                <form onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>The Olde Dutch Restaurant</h3>
+                <p>Authentic comfort food since 1985.</p>
+                <p>12791 State Route 664 S<br />Logan, OH 43138</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Mon–Sat: 11 AM – 8 PM</p>
+                <p>Sun: 11 AM – 7 PM</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 The Olde Dutch Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="tel:+17403851000" class="sticky-btn">📞 Book a Table</a>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
